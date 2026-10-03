@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #f0e3c7;
+}
+
+nav{
+    background-color:  #352620;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;    
+
+    & input, select{
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: transparent;
+        color:  white;
+    }
+}
+
+.containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card{
+    transition: 0.4s ;
+    width: 320px;
+    height: 320px;
+    background-color: #352620;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 2px 2px 6px black;
+    text-align: center;
+    
+    & h1{
+        font-size: 15px;
+    }
+
+    & h1, span{
+        padding: 8px;
+    }
+
+    & div{
+        align-self: flex-start;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+        
+        border-radius: 500px;
+    }
+}
+
+.card:hover{
+    width: 328px;
+    height: 328px;
+}
+
+.prioridadeAlta{
+    background-color: #B94A48;
+}
+
+.prioridadeMedia{
+    background-color: #c49a6c;
+}
+
+.prioridadeBaixa{
+    background-color: #4F6348;
+}

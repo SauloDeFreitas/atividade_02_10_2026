@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="criarCardIniciais()">
+    <nav>
+        <label for="">Nome</label>
+        <input id="nome" type="text" oninput="verificarNome()">
+        <select id="filtroStatus" onchange="filtrarPorStatus()">
+            <option value="Aberto">Abertos</option>
+            <option value="Em progresso">Em Progresso</option>
+            <option value="Fechado">Fechados</option>
+        </select>
+        <select id="filtroPrioridade" onchange="filtrarPorPrioridade()">
+            <option value="Alta">Alta</option>
+            <option value="Média">Média</option>
+            <option value="Baixa">Baixa</option>
+        </select>
+    </nav>
+    <div class="containerCard" id="containerChamados"> </div>
+</body>
+</html>
